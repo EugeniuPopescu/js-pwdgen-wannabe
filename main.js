@@ -7,7 +7,11 @@ console.log(lName);
 const color = prompt('inserisci il tuo colore prefe:', 'Black');
 console.log(color);
 
+const suffix = '#23';
+
+const Password = `${fName}${lName}${color}${suffix}`;
+
 document.getElementById('fName').innerHTML = `Nome: ${fName}`;
 document.getElementById('lName').innerHTML = `Cognome: ${lName}`;
 document.getElementById('color').innerHTML = `Colore prefe: ${color}`;
-document.getElementById('passgen').innerHTML = `Password: ${fName}${lName}${color}#23`;
+document.getElementById('passgen').innerHTML = `Password: ${Password}`;
